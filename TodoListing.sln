@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListing.Api", "TodoListing.Api\TodoListing.Api.csproj", "{25F13D35-5F57-4E41-863D-5F7F995E5AF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListing.Auth", "TodoListing.Auth\TodoListing.Auth.csproj", "{C0F71072-DDC8-4067-BED9-E7B796936CC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{25F13D35-5F57-4E41-863D-5F7F995E5AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25F13D35-5F57-4E41-863D-5F7F995E5AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25F13D35-5F57-4E41-863D-5F7F995E5AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F71072-DDC8-4067-BED9-E7B796936CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F71072-DDC8-4067-BED9-E7B796936CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F71072-DDC8-4067-BED9-E7B796936CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F71072-DDC8-4067-BED9-E7B796936CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
