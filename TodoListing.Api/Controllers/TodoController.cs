@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using TodoListing.DAL;
 using TodoListing.DAL.Models;
 using TodoListing.Services.DataServices;
+using TodoListing.Api.Filters;
+using TodoListing.DAL.DTO;
 
 namespace TodoListing.Api.Controllers
 {
@@ -40,14 +42,15 @@ namespace TodoListing.Api.Controllers
 
         // POST: api/Todo
         [HttpPost]
-        public void Post([FromBody] Todo _todo)
+        [ValidatorActionFilter]
+        public void Post([FromBody] TodoDTO todo)
         {
-            _todoDataServices.AddTodo(_todo);
+            _todoDataServices.AddTodo(todo);
         }
 
         // PUT: api/Todo/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Todo todo)
+        public void Put(int id, [FromBody] TodoDTO todo)
         {
             _todoDataServices.UpdateTodo(id, todo);
         }
