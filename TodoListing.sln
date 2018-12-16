@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListing.Auth", "TodoLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListing.DAL", "TodoListing.DAL\TodoListing.DAL.csproj", "{44540941-ADA0-4158-A98C-DFC1E786DCEF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListing.Services", "TodoListing.Services\TodoListing.Services.csproj", "{B15FA0AA-B7D7-48D5-9833-C957CFF4E61B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{44540941-ADA0-4158-A98C-DFC1E786DCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44540941-ADA0-4158-A98C-DFC1E786DCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44540941-ADA0-4158-A98C-DFC1E786DCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15FA0AA-B7D7-48D5-9833-C957CFF4E61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15FA0AA-B7D7-48D5-9833-C957CFF4E61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15FA0AA-B7D7-48D5-9833-C957CFF4E61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15FA0AA-B7D7-48D5-9833-C957CFF4E61B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

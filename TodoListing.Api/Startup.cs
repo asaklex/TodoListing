@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using TodoListing.Auth;
 using TodoListing.Auth.TokenAuth;
 using TodoListing.DAL;
+using TodoListing.Services.DataServices;
 
 namespace TodoListing.Api
 {
@@ -49,6 +50,8 @@ namespace TodoListing.Api
             //add Entity Framework 
             var connectionString = Configuration.GetConnectionString("TodoListingDbContext");
             services.AddDbContext<TodoListingDbContext>(options => options.UseSqlServer(connectionString));
+
+            services.AddSingleton<ITodoDataServices, TodoDataServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
