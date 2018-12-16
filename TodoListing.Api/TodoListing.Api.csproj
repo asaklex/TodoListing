@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TodoListing.Auth\TodoListing.Auth.csproj" />
+    <ProjectReference Include="..\TodoListing.DAL\TodoListing.DAL.csproj" />
   </ItemGroup>
 
 </Project>
