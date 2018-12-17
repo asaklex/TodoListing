@@ -10,6 +10,6 @@ namespace TodoListing.Services.DataServices
     {
         Todo AddTodo(TodoDTO todo);
         void RemoveTodo(int id);
-        Todo UpdateTodo(int id, TodoDTO todo);
+        Todo UpdateTodo(int id, TodoUpdateDTO todo);
     }
 }

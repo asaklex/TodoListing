@@ -50,7 +50,7 @@ namespace TodoListing.Api.Controllers
 
         // PUT: api/Todo/5
         [HttpPut("{todoId}")]
-        public void Put(int todoId, [FromBody] TodoDTO todo)
+        public void Put(int todoId, [FromBody] TodoUpdateDTO todo)
         {
             _todoDataServices.UpdateTodo(todoId, todo);
         }

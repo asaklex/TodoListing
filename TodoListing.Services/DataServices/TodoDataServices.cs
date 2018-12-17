@@ -30,12 +30,12 @@ namespace TodoListing.Services.DataServices
             return todo;
         }
 
-        public Todo UpdateTodo(int id, TodoDTO todo)
+        public Todo UpdateTodo(int id, TodoUpdateDTO todo)
         {
             var existing = _dbContext.Todos.Find(id);
             if(existing != null)
             {
-                if(!string.IsNullOrEmpty(todo.Description) && !todo.Title.Equals(existing.Description))
+                if(!string.IsNullOrEmpty(todo.Description) && !todo.Description.Equals(existing.Description))
                     existing.Description = todo.Description;
 
                 if (!string.IsNullOrEmpty(todo.Title) && !todo.Title.Equals(existing.Title))
