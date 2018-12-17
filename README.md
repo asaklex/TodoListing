@@ -13,4 +13,6 @@ Update Connection String "TodoListingDbContext" in appsettings.config to use any
 
 Then Run "update-database" from package manager console to create dataBase.
 
+"ApiKey" header needs to be provided with one of the hardcoded values in order to authenticate with each API Request
+
 
