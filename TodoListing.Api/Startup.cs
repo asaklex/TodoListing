@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TodoListing.Api.Middlewares;
 using TodoListing.Auth;
 using TodoListing.Auth.TokenAuth;
 using TodoListing.DAL;
@@ -61,6 +62,7 @@ namespace TodoListing.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseTodoException();
             app.UseAuthentication();
             app.UseMvc();
         }
