@@ -34,10 +34,10 @@ namespace TodoListing.Api.Controllers
         }
 
         // GET: api/Todo/5
-        [HttpGet("{id}", Name = "Get")]
-        public Todo Get(int id)
+        [HttpGet("{todoId}", Name = "Get")]
+        public Todo Get(int todoId)
         {
-            return _todoListingDbContext.Todos.Find(id);
+            return _todoListingDbContext.Todos.Find(todoId);
         }
 
         // POST: api/Todo
@@ -49,17 +49,17 @@ namespace TodoListing.Api.Controllers
         }
 
         // PUT: api/Todo/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] TodoDTO todo)
+        [HttpPut("{todoId}")]
+        public void Put(int todoId, [FromBody] TodoDTO todo)
         {
-            _todoDataServices.UpdateTodo(id, todo);
+            _todoDataServices.UpdateTodo(todoId, todo);
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{todoId}")]
+        public void Delete(int todoId)
         {
-            _todoDataServices.RemoveTodo(id);
+            _todoDataServices.RemoveTodo(todoId);
         }
     }
 }
